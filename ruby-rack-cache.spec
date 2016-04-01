@@ -2,7 +2,7 @@
 Summary:	Small, simple testing API for Rack apps
 Name:		ruby-%{pkgname}
 Version:	1.2
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Libraries
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
