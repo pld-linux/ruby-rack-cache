@@ -1,13 +1,13 @@
 %define pkgname rack-cache
-Summary:	Small, simple testing API for Rack apps
+Summary:	HTTP caching for Rack-based applications
 Name:		ruby-%{pkgname}
-Version:	1.2
-Release:	3
+Version:	1.17.0
+Release:	1
 License:	MIT
 Group:		Development/Libraries
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	ccdcdd7302394e05d3033d683b658556
-URL:		http://github.com/brynary/rack-test
+# Source0-md5:	f389e975006dcb10ef80b0f9438b5ff5
+URL:		https://github.com/rtomayko/rack-cache
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.665
 Requires:	ruby-rack >= 1.0
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES README TODO
+%doc CHANGES MIT-LICENSE README.md
 %{ruby_vendorlibdir}/rack/cache.rb
 %{ruby_vendorlibdir}/rack-cache.rb
 %{ruby_vendorlibdir}/rack/cache
